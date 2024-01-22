@@ -2,3 +2,5 @@ fastapi
 langchain
 torch
 nest_asyncio
+newspaper3k
+sentence_transformers
