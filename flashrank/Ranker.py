@@ -7,7 +7,7 @@ import os
 import zipfile
 import requests
 from tqdm import tqdm
-from flashrank.Config import default_model, default_cache_dir, model_url, model_file_map
+from .Config import default_model, default_cache_dir, model_url, model_file_map
 import collections
 
 class RerankRequest:
@@ -122,7 +122,7 @@ class Ranker:
         query = request.query
         passages = request.passages
 
-        query_passage_pairs = [[query, passage["text"]] for passage in passages]
+        query_passage_pairs = [[query, passage['text']] for passage in passages]
 
         input_text = self.tokenizer.encode_batch(query_passage_pairs)
         input_ids = np.array([e.ids for e in input_text])

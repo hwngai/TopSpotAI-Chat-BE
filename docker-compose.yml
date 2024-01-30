@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  embedding:
+    build: .
+    ports:
+      - "8888:8888"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+

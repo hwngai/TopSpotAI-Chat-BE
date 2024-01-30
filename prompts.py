@@ -5,7 +5,7 @@ Trả lời câu hỏi dựa trên ngữ cảnh sau đây:
 
 {context}
 
-Trả lời câu hỏi dựa trên ngữ cảnh trên: {question}
+Tìm kiếm tương tự hàng đầu: {question}
 """
 def create_prompt(context, question):
 

@@ -1,4 +1,27 @@
 # TopSpotAI Chat Backend
+
+## Deployment
+
+```
+docker-compose up -d --build
+```
+
+### Opening SwaggerUI
+In your favorite browser, go to the following link - 
+```
+http://127.0.0.1:8888/docs
+``` 
+**Docs API**
+  <center><img src="./images/docsapi.png" width=600/></center>
+
+<br/>
+  <center><img src="./images/list_model_emb.png" width=600/></center>
+
+<br/>
+  <center><img src="./images/query.png" width=600/></center>
+
+<br/>
+
 ## You can use it with any search & retrieval pipeline(In progress):
 
 1. **Lexical Search (RegularDBs that supports full-text search or Inverted Index)**
@@ -15,15 +38,3 @@
 
 <br/>
 
-## Deployment
-
-```
-     docker-compose build
-     docker-compose up -d
-```
-
-### Opening SwaggerUI
-In your favorite browser, go to the following link - 
-```text
-http://127.0.0.1:8888/docs
-``` 

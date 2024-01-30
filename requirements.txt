@@ -4,3 +4,8 @@ torch
 nest_asyncio
 newspaper3k
 sentence_transformers
+tokenizers
+tqdm
+requests
+numpy
+onnxruntime
